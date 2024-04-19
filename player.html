@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shanal Ak</title>
+    <title>Pedal</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +32,35 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 13px;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
 
 body {
   position: relative;
@@ -208,7 +237,20 @@ body {
 </style>
 <body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
 
-    
+    <div class="navbar">
+        <a href="/category" style="
+          padding-top: 0px;
+      ">Home</a>
+        
+        <a href="#contact" style="
+          visibility: hidden;
+      ">Contact</a>
+      </div>
+
+      <h2><span class="fa" style="
+        color: white;
+    "></span>I Want To Listen To</h2>
+
 
     <div class="album-cover">
       <div class="swiper">

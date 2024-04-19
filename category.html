@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shanal Ak</title>
+    <title>Pedal</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,35 @@
 
 :root {
   --primary-clr: rgba(228, 228, 229, 1);
+}
+
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 13px;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
 
 
@@ -210,7 +239,19 @@ body {
 </style>
 <body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
 
-    
+    <div class="navbar">
+        <a href="/" style="
+          padding-top: 0px;
+      ">Home</a>
+        
+        <a href="#contact" style="
+          visibility: hidden;
+      ">Contact</a>
+      </div>
+
+      <h2><span class="fa" style="
+        color: white;
+    "></span>I Want To Play</h2>
 
     <div class="album-cover">
       <div class="swiper">
@@ -222,7 +263,7 @@ body {
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./assets/images/c2.jpg">
+            <img src="./assets/images/c9.jpg">
             <div class="overlay">
               <a href="https://www.youtube.com/watch?v=qEnfeG8uBRY&amp;ab_channel=AliciaKeys-Topic" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
             </div>
@@ -283,26 +324,28 @@ body {
 ">
                 <div class="row" style="width: 100%;display: flex;justify-content: center;gap: 20px;">
                     
-<button class="bubbly-button" style="
-    width: 200px;
-    height: 70px;
-    font-size: 24px;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #0965c0, #c53a94);
-    border: none;
-    font-weight: bold;
-" onclick="window.location.href='./player.html'">Listen</button>
-                    
-                <button class="bubbly-button" style="
-    width: 200px;
-    height: 70px;
-    font-size: 24px;
-    border-radius: 10px;
-    background: linear-gradient(147deg, #c53a94, #0965c0);
-    border: none;
-    font-weight: bolder;
-    font-family: inherit;
-">Learn More</button></div>
+                    <button class="bubbly-button" style="
+                        width: 200px;
+                        height: 70px;
+                        font-size: 24px;
+                        border-radius: 10px;
+                        background: #0000004a;
+                        border: none;
+                        color: white;
+                        font-weight: bold;
+                        box-shadow: 1px 2px 33px -6px white;
+                    " onclick="window.location.href='./player.html'">Listen</button>
+                                        
+                                    <button class="bubbly-button" style="
+                        width: 200px;
+                        height: 70px;
+                        font-size: 24px;
+                        border-radius: 10px;
+                        background: white;
+                        border: none;
+                        font-weight: bolder;
+                        font-family: inherit;
+                    ">Learn More</button></div>
 
              
 
@@ -331,7 +374,7 @@ const artistName = document.querySelector(".music-player p");
 const songs = [
   {
     title: "Guitar",
-    name: "Acoustic",
+    name: "Electric",
     source:
       "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/Clean-Bandit-Symphony.mp3",
   },
@@ -343,13 +386,13 @@ const songs = [
   },
   {
     title: "Guitar",
-    name: "Electric",
+    name: "Acoustasonic",
     source:
       "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/Madrigal-Seni-Dert-Etmeler.mp3",
   },
   {
     title: "Guitar",
-    name: "Acoustasonic",
+    name: "Acoustic",
     source:
       "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/Daft-Punk-Instant-Crush.mp3",
   },
